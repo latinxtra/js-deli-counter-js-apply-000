@@ -1,9 +1,18 @@
-var katzDeliLine = [];
 
-function takeANumber(katzDeliLine, name) {
-  katzDeliLine.push(name);
-  return "Welcome, " + name + ". " + "You are number " + katzDeliLine.length + " in line.";
+//create ticket machine system that replaces name with alias (ticketnumber)
+
+var katzDeliLine = []; // place in line
+var ticketnumber = new array(10000); // substitute for name
+
+function takeANumber (katzDeliLine, ticketnumber) {
+ katzDeliLine.push(ticketnumber);
+ return "Welcome, ticket number " + ticketnumber + "." + " You are number " + katzDeliLine.length + " in line.";
 }
+
+//function takeANumber(katzDeliLine, name) {
+  //katzDeliLine.push(name);
+  //return "Welcome, " + name + ". " + "You are number " + katzDeliLine.length + " in line."//;
+
 
 function nowServing(katzDeliLine) {
   if (katzDeliLine.length === 0) {
@@ -40,6 +49,17 @@ function currentLine (katzDeliLine) {
   //}
   //return katzDeli;
 //}
+
+function takeANumber(katzDeli) {
+  let i = 1;
+  let otherDeli = ["Ada"];
+  while(i<otherDeli.length) {
+    katzDeli= "Welcome, " + otherDeli[i] + ". " + "You are number " + katzDeli[i] + " in line.";
+      i++;
+  }
+  return katzDeli;
+}
+
   
   
   
@@ -52,3 +72,6 @@ function currentLine (katzDeliLine) {
 //  return welcome
 // }
   // messy above
+  
+  
+  
